@@ -7,6 +7,11 @@ import {BuildOptions} from "./types/config";
 export function buildPlugins(options: BuildOptions): webpack.WebpackPluginInstance[] {
     const {paths, isDev} = options;
 
+    const HMRPlugins = [];
+    if (isDev) {
+        HMRPlugins.push(new webpack.HotModuleReplacementPlugin())
+    }
+
     return [
         new HTMLWebpackPlugin({
             template: paths.html
@@ -18,6 +23,6 @@ export function buildPlugins(options: BuildOptions): webpack.WebpackPluginInstan
         }),
         new webpack.DefinePlugin({
             __IS_DEV__ : JSON.stringify(isDev)
-        })
+        }),
     ]
 }
