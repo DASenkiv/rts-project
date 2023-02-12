@@ -2,5 +2,7 @@
   "language": "Russian",
   "mainLink": "Main",
   "aboutUs": "About",
-  "pageNotFound": "Page not found"
+  "pageNotFound": "Page not found",
+  "pageErrorText": "Something went wrong. Try later",
+  "refreshPage": "Refresh page"
 }

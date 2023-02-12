@@ -4,5 +4,8 @@
   "language": "language",
   "mainLink": "mainLink",
   "mainPage": "",
-  "pageNotFound": "pageNotFound"
+  "pageErrorText": "pageErrorText",
+  "pageNotFound": "pageNotFound",
+  "refreshPage": "refreshPage",
+  "throw error": ""
 }
