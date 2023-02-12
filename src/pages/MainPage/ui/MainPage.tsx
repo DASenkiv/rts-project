@@ -1,10 +1,13 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-const MainPage = () => (
-    // eslint-disable-next-line i18next/no-literal-string
-    <div>
-        Main page
-    </div>
-);
+const MainPage = () => {
+    const { t } = useTranslation('main');
+    return (
+        <div>
+            {t('mainPage')}
+        </div>
+    );
+};
 
 export default MainPage;

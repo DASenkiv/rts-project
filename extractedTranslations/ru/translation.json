@@ -2,5 +2,7 @@
   "aboutSite": "aboutSite",
   "aboutUs": "aboutUs",
   "language": "language",
-  "mainLink": "mainLink"
+  "mainLink": "mainLink",
+  "mainPage": "",
+  "pageNotFound": "pageNotFound"
 }
