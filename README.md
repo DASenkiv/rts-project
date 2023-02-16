@@ -2,9 +2,15 @@
 
 Tech Stack:
 - React
-- TypeScript
+- TypeScript, JavaScript
 - webpack
 - scss (with themes)
+- storybook
+- jest, React Testing Library
+- i18n
+- eslint
+- stylelint
+- babel
 
 Extra:
 - lazy loading for components

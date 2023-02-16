@@ -22,7 +22,7 @@ export function Navbar({ className }: NavbarProps) {
                 </AppLink>
                 <AppLink
                     to="/about"
-                    theme={AppLinkTheme.SECONDARY}
+                    theme={AppLinkTheme.RED}
                 >
                     {t('aboutUs')}
                 </AppLink>
