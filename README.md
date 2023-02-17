@@ -6,7 +6,7 @@ Tech Stack:
 - webpack
 - scss (with themes)
 - storybook
-- jest, React Testing Library
+- jest, React Testing Library, loki
 - i18n
 - eslint
 - stylelint
