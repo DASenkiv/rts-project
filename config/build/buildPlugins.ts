@@ -11,9 +11,12 @@ export function buildPlugins(
 ): webpack.WebpackPluginInstance[] {
     const { paths, isDev } = options;
 
-    const HMRPlugins = [];
+    const devPlugins = [];
     if (isDev) {
-        HMRPlugins.push(new webpack.HotModuleReplacementPlugin());
+        devPlugins.push(new webpack.HotModuleReplacementPlugin());
+        devPlugins.push(new BundleAnalyzerPlugin({
+            openAnalyzer: false,
+        }));
     }
 
     return [
@@ -28,8 +31,6 @@ export function buildPlugins(
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
         }),
-        new BundleAnalyzerPlugin({
-            openAnalyzer: false,
-        }),
+        ...devPlugins,
     ];
 }

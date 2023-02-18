@@ -14,6 +14,7 @@ Tech Stack:
 
 Extra:
 - lazy loading for components
+- CI: GitHub Actions
 
 
 Architecture: [FSD - Feature-Sliced Design](https://feature-sliced.design/)

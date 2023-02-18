@@ -9,13 +9,14 @@
     "build:dev": "webpack  --env mode=development",
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint:fix": "eslint \"**/*.{ts,tsx}\" --fix",
-    "stylelint": "npx stylelint \"**/*.scss\"",
-    "stylelint:fix": "npx stylelint \"**/*.scss\" --fix",
+    "stylelint": "stylelint \"**/*.scss\"",
+    "stylelint:fix": "stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "test:ui": "loki test",
     "test:ui:ok": "loki approve",
+    "test:ui:ci": "loki --requireReference --reactUri file:./storybook-static",
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
-    "storybook: build": "build-storybook -c ./config/storybook"
+    "storybook:build": "build-storybook -c ./config/storybook"
   },
   "keywords": [],
   "author": "",
@@ -89,13 +90,12 @@
     "react-router-dom": "^6.2.1"
   },
   "loki": {
+    "chromeSelector": ".app",
     "configurations": {
       "chrome.laptop": {
         "target": "chrome.docker",
         "width": 1366,
-        "height": 768,
-        "deviceScaleFactor": 1,
-        "mobile": false
+        "height": 768
       },
       "chrome.iphone7": {
         "target": "chrome.docker",
