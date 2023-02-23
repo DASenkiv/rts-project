@@ -7,5 +7,6 @@
   "pageErrorText": "pageErrorText",
   "pageNotFound": "pageNotFound",
   "refreshPage": "refreshPage",
-  "throw error": ""
+  "throw error": "",
+  "languageShort": "languageShort"
 }

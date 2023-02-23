@@ -8,6 +8,10 @@
 
 .collapsed {
     width: var(--sidebar-width-collapsed);
+
+    .switchers {
+        flex-direction: column;
+    }
 }
 
 .switchers {
@@ -17,4 +21,11 @@
     justify-content: center;
     width: 100%;
     gap: 20px;
+}
+
+
+.collapsedBtn {
+    position: absolute;
+    right: -32px;
+    bottom: 32px;
 }

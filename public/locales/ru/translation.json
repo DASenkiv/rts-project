@@ -1,8 +1,9 @@
 {
-  "language": "Английский",
+  "language": "English",
   "mainLink": "Главная",
   "aboutUs": "О сайте",
   "pageNotFound": "Страница не найдена",
   "pageErrorText": "Что-то пошло не так. Попробуйте позже",
-  "refreshPage": "Перезагрузить страницу"
+  "refreshPage": "Перезагрузить страницу",
+  "languageShort": "En"
 }
